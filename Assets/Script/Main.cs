@@ -2,26 +2,22 @@ using UnityEngine;
 
 public class Main : MonoBehaviour
 {
-    Transform canvasRoot;
+    [SerializeField]
+    Transform canvasRoot, pageRoot;
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    void Awake()
     {
-
-        //DelegateEntry.PageEventChange += PageEvent;
-        //DelegateEvent.PageEventChange += PageEvent;
+        pageRoot.GetChild(0).gameObject.SetActive(true);
     }
-
-    private void OnDisable()
-    {
-        //DelegateEvent.PageEventChange += PageEvent;
-    }
-
 
     // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Application.Quit();
+        } 
     }
 }
