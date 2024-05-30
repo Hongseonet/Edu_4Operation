@@ -8,8 +8,16 @@ public class Main : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+
+        //DelegateEntry.PageEventChange += PageEvent;
+        //DelegateEvent.PageEventChange += PageEvent;
     }
+
+    private void OnDisable()
+    {
+        //DelegateEvent.PageEventChange += PageEvent;
+    }
+
 
     // Update is called once per frame
     void Update()
