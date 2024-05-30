@@ -1,29 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using UnityEngine;
+﻿using UnityEngine;
+using UnityEngine.UI;
 
-class PageManager : MonoBehaviour
+class PageManager : DelegateEvent
 {
-    int pageIndex;
-
-    private void OnEnable()
-    {
-
-        DelegateEvent.PageEventChange += PageEvent;
-    }
-
-    private void OnDisable()
-    {
-
-        DelegateEvent.PageEventChange -= PageEvent;
-    }
+    protected int pageIndex;
+    protected int operationIndex; //0 add, 1 substraction, 2 multiplication, 3 division
 
 
-    public void PageEvent(DelegateEventData data)
-    {
-
-    }
 }

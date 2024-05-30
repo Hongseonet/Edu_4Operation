@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class DelegateEventData
 {
-    public GameObject targetObject; //page object
-
+    public int operations;
+    public int digit;
 
 }
