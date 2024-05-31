@@ -42,13 +42,17 @@ public class Main : MonoBehaviour
     }
 
 
+    //delegate button event
     public void PageEvent(DelegateEventData data)
     {
-        Common.Instance.Log("PageEvent", data.operations);
-    }
+        Common.Instance.Log("PageEvent", data.btnTarget);
 
-    public void BtnEvent(Button btn)
-    {
+        switch (data.btnTarget.name.Split('_')[1].ToLower())
+        {
+            case "operations":
 
+                break;
+        }
+        
     }
 }

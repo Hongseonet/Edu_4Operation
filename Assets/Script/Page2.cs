@@ -1,8 +1,7 @@
-using UnityEditor.Localization.Plugins.XLIFF.V12;
 using UnityEngine;
 using UnityEngine.UI;
 
-class Page1 : PageManager
+class Page2 : PageManager
 {
     [SerializeField]
     Transform buttonRoot;
@@ -32,9 +31,11 @@ class Page1 : PageManager
 
     void BtnEvent(Button btn)
     {
+        int chooseOperation = int.Parse(btn.name.Split('_')[2]);
+
         PageEvent = new DelegateEventData
         {
-            btnTarget = btn.gameObject,
+            //operations = chooseOperation,
         };
     }
 }
