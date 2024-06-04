@@ -1,3 +1,4 @@
+using TMPro;
 using UnityEngine;
 using UnityEngine.Localization;
 using UnityEngine.UI;
@@ -25,6 +26,13 @@ class Page1 : PageManager
     void SetText()
     {
         Common.Instance.Log("dd", Common.Instance.GetLocalizedString("localize", "appName"));
+
+        string[] arrString = new string[] { "addiction", "subtraction", "multiplication", "division" };
+
+        for(int i = 0; i < textRoot.childCount; i++)
+        {
+            textRoot.GetChild(i).GetComponent<TextMeshProUGUI>().text = Common.Instance.GetLocalizedString("localize", arrString[i]);
+        }
     }
 
     private void OnDisable()
@@ -41,7 +49,7 @@ class Page1 : PageManager
     {
         PageEvent = new DelegateEventData
         {
-            btnTarget = btn.gameObject,
+            objTarget = btn.gameObject,
         };
     }
 }

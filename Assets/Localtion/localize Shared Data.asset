@@ -24,11 +24,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 538980241408
-    m_Key: substraction
+    m_Key: subtraction
     m_Metadata:
       m_Items: []
   - m_Id: 571821641728
-    m_Key: multipication
+    m_Key: multiplication
     m_Metadata:
       m_Items: []
   - m_Id: 610937720832

@@ -1,5 +1,8 @@
 using UnityEngine;
+using UnityEngine.Localization.Settings;
+using UnityEngine.Localization;
 using UnityEngine.UI;
+using TMPro;
 
 public class Main : MonoBehaviour
 {
@@ -9,6 +12,10 @@ public class Main : MonoBehaviour
     [SerializeField]
     Transform canvasRoot, pageRoot;
 
+    [SerializeField]
+    TextMeshProUGUI textTitle;
+
+    string operation;
     int pageIndex;
 
 
@@ -16,8 +23,17 @@ public class Main : MonoBehaviour
     void Awake()
     {
         CONST_VALUE.Instance.ISDEV = isDev;
+
+
+        Locale currentSelectedLocale = LocalizationSettings.SelectedLocale;
+        ILocalesProvider availableLocales = LocalizationSettings.AvailableLocales;
         
-        Common.Instance.SetLocalization(0);
+        if (currentSelectedLocale == availableLocales.GetLocale("fr"))
+        {
+
+        }
+
+        Common.Instance.SetLocalization(1); //0 eng, 1 kor
 
         pageRoot.GetChild(0).gameObject.SetActive(true);
         
@@ -48,14 +64,31 @@ public class Main : MonoBehaviour
     //delegate button event
     public void PageEvent(DelegateEventData data)
     {
-        Common.Instance.Log("PageEvent", data.btnTarget);
+        Common.Instance.Log("PageEvent", data.objTarget);
+        string[] splitName = data.objTarget.name.Split('_');
 
-        switch (data.btnTarget.name.Split('_')[1].ToLower())
+        if (splitName[1].ToLower().Equals("operations"))
         {
-            case "operations":
-
-                break;
+            switch (splitName[2])
+            {
+                case "1":
+                    operation = "addiction";
+                    break;
+                case "2":
+                    operation = "subtraction";
+                    break;
+                case "3":
+                    operation = "multiplication";
+                    break;
+                case "4":
+                    operation = "division";
+                    break;
+            }
         }
-        
+
+        pageRoot.GetChild(pageIndex).gameObject.SetActive(false);
+        pageIndex++;
+        pageRoot.GetChild(pageIndex).gameObject.SetActive(true);
+
     }
 }

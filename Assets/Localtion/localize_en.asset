@@ -23,19 +23,19 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 489772666880
-    m_Localized: addiction
+    m_Localized: Addiction
     m_Metadata:
       m_Items: []
   - m_Id: 538980241408
-    m_Localized: substraction
+    m_Localized: Subtraction
     m_Metadata:
       m_Items: []
   - m_Id: 571821641728
-    m_Localized: multipication
+    m_Localized: Multiplication
     m_Metadata:
       m_Items: []
   - m_Id: 610937720832
-    m_Localized: division
+    m_Localized: Division
     m_Metadata:
       m_Items: []
   - m_Id: 695402614784

@@ -3,6 +3,6 @@ using UnityEngine;
 
 public class DelegateEventData
 {
-    public GameObject btnTarget;
+    public GameObject objTarget;
     public int digit;
 }

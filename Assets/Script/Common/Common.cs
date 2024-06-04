@@ -62,6 +62,11 @@ public class Common : SingletonManager<Common>
         }
     }
 
+    public void SetImageAlpha(Image image, float alpha)
+    {
+
+    }
+
     public void SetImageColor(string colorCode, Image image)
     {
         Vector4 convertColor;
