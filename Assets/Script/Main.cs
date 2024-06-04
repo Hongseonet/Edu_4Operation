@@ -16,8 +16,11 @@ public class Main : MonoBehaviour
     void Awake()
     {
         CONST_VALUE.Instance.ISDEV = isDev;
+        
+        Common.Instance.SetLocalization(0);
 
         pageRoot.GetChild(0).gameObject.SetActive(true);
+        
     }
 
     // Update is called once per frame

@@ -10,36 +10,36 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
-  m_Name: New Table_ko
+  m_Name: localize_en
   m_EditorClassIdentifier: 
   m_LocaleId:
-    m_Code: ko
+    m_Code: en
   m_SharedData: {fileID: 11400000, guid: daf0c6fd610204449b96171bacf5a814, type: 2}
   m_Metadata:
     m_Items: []
   m_TableData:
   - m_Id: 25698095104
-    m_Localized: "\uC0AC\uCE59\uC5F0\uC0B0"
+    m_Localized: 4 Operations
     m_Metadata:
       m_Items: []
   - m_Id: 489772666880
-    m_Localized: "\uB354\uD558\uAE30"
+    m_Localized: addiction
     m_Metadata:
       m_Items: []
   - m_Id: 538980241408
-    m_Localized: "\uBE7C\uAE30"
+    m_Localized: substraction
     m_Metadata:
       m_Items: []
   - m_Id: 571821641728
-    m_Localized: "\uACF1\uD558\uAE30"
+    m_Localized: multipication
     m_Metadata:
       m_Items: []
   - m_Id: 610937720832
-    m_Localized: "\uB098\uB204\uAE30"
+    m_Localized: division
     m_Metadata:
       m_Items: []
   - m_Id: 695402614784
-    m_Localized: "\uBA54\uB274\uB97C \uC120\uD0DD\uD558\uC138\uC694"
+    m_Localized: chooseMenu
     m_Metadata:
       m_Items: []
   references:

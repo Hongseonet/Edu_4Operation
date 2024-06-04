@@ -1,11 +1,11 @@
-using UnityEditor.Localization.Plugins.XLIFF.V12;
 using UnityEngine;
+using UnityEngine.Localization;
 using UnityEngine.UI;
 
 class Page1 : PageManager
 {
     [SerializeField]
-    Transform buttonRoot;
+    Transform buttonRoot, textRoot;
 
 
     private void OnEnable()
@@ -18,6 +18,13 @@ class Page1 : PageManager
             Button btn = item.GetComponent<Button>();
             btn.onClick.AddListener(() => BtnEvent(btn));
         }
+
+        SetText();
+    }
+
+    void SetText()
+    {
+        Common.Instance.Log("dd", Common.Instance.GetLocalizedString("localize", "appName"));
     }
 
     private void OnDisable()

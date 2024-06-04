@@ -1,10 +1,13 @@
 fileFormatVersion: 2
-guid: c432a1f0506804042a801c1d07118e7c
+guid: 1df04316a91b83a4fa63cfa5f6a08606
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6724147538274434072
-    second: composition-with-kids-drawing-copyspace-mothers-day_0
+      213: 7900601493274412691
+    second: equal_0
+  - first:
+      213: -7841725226659723446
+    second: equal_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -84,7 +87,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
-    buildTarget: Win64
+    buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -109,43 +112,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: Standalone
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: composition-with-kids-drawing-copyspace-mothers-day_0
+      name: equal_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 6240
-        height: 4160
+        x: 47
+        y: 303
+        width: 418
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -154,8 +131,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 81c3a2c5f88f05d50800000000000000
-      internalID: 6724147538274434072
+      spriteID: 396ca8ee23394ad60800000000000000
+      internalID: 7900601493274412691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: equal_1
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 143
+        width: 418
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a474abe14789c2390800000000000000
+      internalID: -7841725226659723446
       vertices: []
       indices: 
       edges: []
@@ -172,7 +171,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      composition-with-kids-drawing-copyspace-mothers-day_0: 6724147538274434072
+      equal_0: 7900601493274412691
+      equal_1: -7841725226659723446
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

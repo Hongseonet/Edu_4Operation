@@ -1,6 +1,8 @@
 using System;
 using UnityEngine;
+using UnityEngine.Localization.Settings;
 using UnityEngine.UI;
+using static System.Net.WebRequestMethods;
 
 public class Common : SingletonManager<Common>
 {
@@ -93,19 +95,17 @@ public class Common : SingletonManager<Common>
         return audioClip;
     }
 
-    public void AB()
+    public void SetLocalization(int index)
     {
-        
+        LocalizationSettings.SelectedLocale =
+        LocalizationSettings.AvailableLocales.Locales[index];
     }
 
-    public int GetLCM(int a, int b)
+    public string GetLocalizedString(string tableName, string key)
     {
-        return (a * b) / GetGCD(a, b);
+        var loacaleString = LocalizationSettings.StringDatabase.GetLocalizedString(tableName, key);
+
+        return loacaleString;
     }
 
-
-    public int GetGCD(int a, int b)
-    {
-        return b == 0 ? a : GetGCD(b, a % b);
-    }
 }

@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 1f467d9def5458948bf715fc25ec5ac5
+guid: 8d2c4abf50c4eea45804584dbf7c953c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1518584974032942798
-    second: multiplication_0
+      213: -7662111243028734685
+    second: card_Q_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,7 +46,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -109,30 +109,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: multiplication_0
+      name: card_Q_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 9
-        width: 133
-        height: 130
+        y: 1
+        width: 179
+        height: 325
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 239458d0307eceae0800000000000000
-      internalID: -1518584974032942798
+      spriteID: 32ddeb98b66baa590800000000000000
+      internalID: -7662111243028734685
       vertices: []
       indices: 
       edges: []
@@ -151,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -159,7 +146,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      multiplication_0: -1518584974032942798
+      card_Q_0: -7662111243028734685
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
