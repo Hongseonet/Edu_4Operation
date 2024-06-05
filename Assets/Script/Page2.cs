@@ -4,11 +4,15 @@ using UnityEngine.UI;
 class Page2 : PageManager
 {
     [SerializeField]
-    Transform buttonRoot;
+    Transform cardRoot;
 
 
     private void OnEnable()
     {
+
+
+        return;
+
         foreach(Transform item in buttonRoot)
         {
             if (item.GetComponent<Button>() == null)
@@ -21,6 +25,8 @@ class Page2 : PageManager
 
     private void OnDisable()
     {
+        return;
+
         foreach (Transform item in buttonRoot)
         {
             Button btn = item.GetComponent<Button>();

@@ -6,7 +6,7 @@ using UnityEngine.UI;
 class Page1 : PageManager
 {
     [SerializeField]
-    Transform buttonRoot, textRoot;
+    Transform textRoot;
 
 
     private void OnEnable()

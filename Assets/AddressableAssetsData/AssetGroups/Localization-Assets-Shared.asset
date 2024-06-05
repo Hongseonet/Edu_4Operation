@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: Localization-Assets-Shared
   m_EditorClassIdentifier: 
   m_GroupName: Localization-Assets-Shared
+  m_Data:
+    m_SerializedData: []
   m_GUID: 157d2ea5325bd4f469d8b0f8e76122a5
   m_SerializeEntries:
   - m_GUID: daf0c6fd610204449b96171bacf5a814
