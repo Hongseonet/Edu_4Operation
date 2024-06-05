@@ -17,7 +17,7 @@ class Page1 : PageManager
                 return;
 
             Button btn = item.GetComponent<Button>();
-            btn.onClick.AddListener(() => BtnEvent(btn));
+            btn.onClick.AddListener(() => ButtonEvent(btn));
         }
 
         SetText();
@@ -45,11 +45,32 @@ class Page1 : PageManager
 
     }
 
-    void BtnEvent(Button btn)
+    public void ButtonEvent(Button button)
     {
-        PageEvent = new DelegateEventData
+        string[] splitName = button.name.Split('_');
+
+        if (splitName[1].ToLower().Equals("operations"))
         {
-            objTarget = btn.gameObject,
-        };
+            switch (splitName[2])
+            {
+                case "1":
+                    operation = "addiction";
+                    break;
+                case "2":
+                    operation = "subtraction";
+                    break;
+                case "3":
+                    operation = "multiplication";
+                    break;
+                case "4":
+                    operation = "division";
+                    break;
+            }
+        }
+
+        this.gameObject.SetActive(false);
+        pageIndex++;
+        pageRoot.GetChild(pageIndex).gameObject.SetActive(true);
+
     }
 }

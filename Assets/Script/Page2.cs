@@ -9,7 +9,10 @@ class Page2 : PageManager
 
     private void OnEnable()
     {
+        foreach(Transform item in cardRoot)
+        {
 
+        }
 
         return;
 
