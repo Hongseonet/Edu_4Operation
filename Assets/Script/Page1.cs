@@ -70,7 +70,7 @@ class Page1 : PageManager
 
         this.gameObject.SetActive(false);
         pageIndex++;
-        pageRoot.GetChild(pageIndex).gameObject.SetActive(true);
+        //pageRoot.GetChild(pageIndex).gameObject.SetActive(true);
 
     }
 }
